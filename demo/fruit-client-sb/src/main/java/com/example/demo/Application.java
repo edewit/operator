@@ -30,7 +30,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @HalkyonComponent(
     name = "fruit-client-sb",
-    deploymentMode = DeploymentMode.build,
+    deploymentMode = DeploymentMode.dev,
     exposeService = true
 )
 @HalkyonLink(

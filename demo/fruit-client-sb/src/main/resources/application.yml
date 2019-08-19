@@ -6,5 +6,4 @@ endpoint:
 
 dekorate:
   component:
-    spec:
-      deploymentMode: "build"
+    deploymentMode: build
