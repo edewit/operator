@@ -19,6 +19,7 @@ package com.example.demo;
 import io.dekorate.halkyon.annotation.HalkyonCapability;
 import io.dekorate.halkyon.annotation.HalkyonComponent;
 import io.dekorate.halkyon.annotation.HalkyonLink;
+import io.dekorate.halkyon.model.DeploymentMode;
 import io.dekorate.halkyon.annotation.Parameter;
 import io.dekorate.halkyon.model.Kind;
 import io.dekorate.kubernetes.annotation.Env;
@@ -28,6 +29,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @HalkyonComponent(
     name = "fruit-backend-sb",
     exposeService = true,
+    deploymentMode = DeploymentMode.build,
     envs = @Env(
         name = "SPRING_PROFILES_ACTIVE",
         value = "postgresql-kubedb")

@@ -18,6 +18,7 @@ package com.example.demo;
 
 import io.dekorate.halkyon.annotation.HalkyonComponent;
 import io.dekorate.halkyon.annotation.HalkyonLink;
+import io.dekorate.halkyon.model.DeploymentMode;
 import io.dekorate.halkyon.model.Kind;
 import io.dekorate.kubernetes.annotation.Env;
 import org.springframework.boot.SpringApplication;
@@ -29,6 +30,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @HalkyonComponent(
     name = "fruit-client-sb",
+    deploymentMode = DeploymentMode.build,
     exposeService = true
 )
 @HalkyonLink(

@@ -1,0 +1,10 @@
+#  OPENSHIFT
+#  export ENDPOINT_BACKEND=http://my-spring-boot-my-spring-app.192.168.99.50.nip.io/api/fruits
+
+endpoint:
+  fruit: ${ENDPOINT_BACKEND}
+
+dekorate:
+  component:
+    spec:
+      deploymentMode: "build"
