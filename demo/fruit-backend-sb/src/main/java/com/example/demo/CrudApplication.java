@@ -29,7 +29,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @HalkyonComponent(
     name = "fruit-backend-sb",
     exposeService = true,
-    deploymentMode = DeploymentMode.build,
+    deploymentMode = DeploymentMode.dev,
     envs = @Env(
         name = "SPRING_PROFILES_ACTIVE",
         value = "postgresql-kubedb")
